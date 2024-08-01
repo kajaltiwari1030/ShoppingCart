@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Items {
+  display: flex;
+}
+.Items-side1 {
+  width: 50%;
+}
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  gap: 50px;
+}
+.Items-side2 {
+  margin: 1%;
+  width: 50%;
+  background-color: rgba(245, 245, 220, 0.461);
+  padding: 2%;
+}
+.Billing {
+  display: flex;
+  gap: 20%;
+}
+
+.ItemsName {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: blue;
+}
+
+.TotalPrice {
+  display: flex;
+  align-items: center;
+  color: brown;
+  font-weight: bolder;
+}
+.Navbar {
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.navtext {
+  font-size: 3vw;
+  white-space: none;
+  text-decoration: none;
+}
+
+.CartNumber {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  font-weight: 600;
+}
+.button {
+  background-color: #0deeb68f;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: black;
+}
+.button:hover {
+  background-color: rgba(0, 0, 255, 0.222);
+}
+.button > span {
+  color: chocolate;
+}
+
+.button > span:hover {
+  color: #010101;
+}
+
+.card-btn {
+  display: flex;
+  gap: 10px;
+}
+
+@media (orientation: portrait) {
+  .Items {
+    flex-direction: column;
+  }
+  .Items-side1 {
+    width: 100%;
+  }
+  .Items-side2 {
+    width: 100%;
+  }
+  .Billing {
+    flex-direction: column;
+  }
+}
